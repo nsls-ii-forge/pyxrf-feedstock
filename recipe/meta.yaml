@@ -1,0 +1,48 @@
+{% set name = "pyxrf" %}
+{% set version = "0.0.9.5" %}
+{% set sha256 = "fc4430ed55a58db7321bec58d4a1ca821e105d73b4d68d525aada52eef8fd84f" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://github.com/NSLS-II/{{ name }}/archive/v{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  number: 0
+  entry_points:
+    - pyxrf = pyxrf.gui:run
+  script: python setup.py install --single-version-externally-managed --record=record.txt
+  noarch: python
+
+requirements:
+  host:
+    - python
+    - setuptools
+  run:
+    - atom
+    - enaml >=0.10.3
+    - h5py
+    - ipywidgets
+    - jupyter
+    - lmfit ==0.8.3
+    - matplotlib
+    - numpy
+    - pandas
+    - pillow
+    - pyqt >=5.9.2
+    - python
+    - scipy
+    - six
+    - scikit-beam >=0.0.14
+    - scikit-image
+
+test:
+  imports:
+    - {{ name }}
+
+about:
+  home: https://github.com/NSLS-II/pyxrf
+  license: 3-Clause BSD
