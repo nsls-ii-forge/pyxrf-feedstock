@@ -15,13 +15,14 @@ build:
   number: 0
   entry_points:
     - pyxrf = pyxrf.gui:run
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
     - python
-    - setuptools
+    - pip
   run:
+    - python
     - atom
     - enaml >=0.10.3
     - h5py
@@ -33,7 +34,6 @@ requirements:
     - pandas
     - pillow
     - pyqt >=5.9.2
-    - python
     - scipy
     - six
     - scikit-beam >=0.0.14
