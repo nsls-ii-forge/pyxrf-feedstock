@@ -11,11 +11,11 @@ source:
   sha256: {{ sha256 }}
 
 build:
+  noarch: python
   number: 0
   entry_points:
     - pyxrf = pyxrf.gui:run
   script: python setup.py install --single-version-externally-managed --record=record.txt
-  noarch: python
 
 requirements:
   host:
@@ -46,3 +46,6 @@ test:
 about:
   home: https://github.com/NSLS-II/pyxrf
   license: 3-Clause BSD
+  license_family: BSD
+  license_file: LICENSE
+  summary: 'Python-based sophisticated fluorescence analysis package for fitting and visualizing X-ray fluorescence data'
