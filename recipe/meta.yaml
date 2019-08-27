@@ -1,6 +1,6 @@
 {% set name = "pyxrf" %}
-{% set version = "0.0.9.5" %}
-{% set sha256 = "fc4430ed55a58db7321bec58d4a1ca821e105d73b4d68d525aada52eef8fd84f" %}
+{% set version = "0.0.9.6" %}
+{% set sha256 = "1c954f2ac714f5c6d97af6348c2e9c11263367bde71624af7018f698e7866232" %}
 
 package:
   name: {{ name|lower }}
@@ -28,7 +28,7 @@ requirements:
     - h5py
     - ipywidgets
     - jupyter
-    - lmfit ==0.8.3
+    - lmfit >=0.8.3
     - matplotlib
     - numpy
     - pandas
@@ -36,7 +36,7 @@ requirements:
     - pyqt >=5.9.2
     - scipy
     - six
-    - scikit-beam >=0.0.14
+    - scikit-beam >=0.0.17
     - scikit-image
 
 test:
