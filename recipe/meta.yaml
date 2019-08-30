@@ -1,13 +1,13 @@
 {% set name = "pyxrf" %}
 {% set version = "0.0.9.7" %}
-{% set sha256 = "bc7d33731973985d431540109630a9098ecbe4234a0199486c541ba155909241" %}
+{% set sha256 = "97b45b5c169d4a8e23ea961076ac9e3aba8142cf7e3578dada01e05de036c05c" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/NSLS-II/{{ name }}/archive/v{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
