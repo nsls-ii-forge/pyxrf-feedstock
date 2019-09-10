@@ -1,6 +1,6 @@
 {% set name = "pyxrf" %}
-{% set version = "0.0.9.9" %}
-{% set sha256 = "358b2d7b14c551664b90232feeefaea74588248fc659c122df07d00baf489b07" %}
+{% set version = "0.0.9.10" %}
+{% set sha256 = "6abeadb410d37d37e5b1ec8db6ccb873b016d9dd56636c96078410d201655e62" %}
 
 package:
   name: {{ name|lower }}
