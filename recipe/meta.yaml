@@ -61,8 +61,6 @@ test:
     - pyxrf.model.setting
     - pyxrf.model.utils
     - pyxrf.view
-  commands:
-    - pyxrf --help
 
 about:
   home: https://github.com/NSLS-II/pyxrf
