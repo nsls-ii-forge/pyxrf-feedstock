@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - pyxrf = pyxrf.gui:run
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
@@ -34,14 +34,20 @@ requirements:
     - pandas
     - pillow
     - pyqt >=5.9.2
-    - scipy
-    - six
+    # - requests
     - scikit-beam >=0.0.17
     - scikit-image
+    - scipy
+    - six
 
 test:
   imports:
-    - {{ name }}
+    - pyxrf
+    - pyxrf.db_config
+    - pyxrf.model
+    - pyxrf.view
+  commands:
+    - pyxrf --help
 
 about:
   home: https://github.com/NSLS-II/pyxrf
