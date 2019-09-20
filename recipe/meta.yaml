@@ -24,7 +24,6 @@ requirements:
   run:
     - python
     - atom
-    - databroker <1
     - enaml >=0.10.3
     - h5py
     - ipywidgets
@@ -45,7 +44,6 @@ test:
   imports:
     - pyxrf
     - pyxrf.api
-    - pyxrf.db_config
     - pyxrf.gui
     - pyxrf.model
     - pyxrf.model.command_tools
