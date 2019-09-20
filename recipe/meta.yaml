@@ -46,9 +46,6 @@ test:
     - pyxrf
     - pyxrf.api
     - pyxrf.db_config
-    - pyxrf.db_config.hxn_db_config
-    - pyxrf.db_config.srx_db_config
-    - pyxrf.db_config.xfm_db_config
     - pyxrf.gui
     - pyxrf.model
     - pyxrf.model.command_tools
