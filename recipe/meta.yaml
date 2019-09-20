@@ -24,7 +24,7 @@ requirements:
   run:
     - python
     - atom
-    - databroker <1.0
+    - databroker <1
     - enaml >=0.10.3
     - h5py
     - ipywidgets
