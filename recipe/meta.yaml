@@ -34,7 +34,7 @@ requirements:
     - pandas
     - pillow
     - pyqt >=5.9.2
-    # - requests
+    - requests
     - scikit-beam >=0.0.17
     - scikit-image
     - scipy
