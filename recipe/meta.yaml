@@ -43,8 +43,25 @@ requirements:
 test:
   imports:
     - pyxrf
+    - pyxrf.api
     - pyxrf.db_config
+    - pyxrf.db_config.hxn_db_config
+    - pyxrf.db_config.srx_db_config
+    - pyxrf.db_config.xfm_db_config
+    - pyxrf.gui
     - pyxrf.model
+    - pyxrf.model.command_tools
+    - pyxrf.model.data_to_analysis_store
+    - pyxrf.model.draw_image
+    - pyxrf.model.draw_image_rgb
+    - pyxrf.model.fileio
+    - pyxrf.model.fit_spectrum
+    - pyxrf.model.guessparam
+    - pyxrf.model.lineplot
+    - pyxrf.model.load_data_from_db
+    - pyxrf.model.param_data
+    - pyxrf.model.setting
+    - pyxrf.model.utils
     - pyxrf.view
   commands:
     - pyxrf --help
