@@ -1,6 +1,6 @@
 {% set name = "pyxrf" %}
-{% set version = "0.0.16" %}
-{% set sha256 = "bf8bacc638ec10f5f838053a2da0af7285048ba676edaf05418738709fc56087" %}
+{% set version = "0.0.17" %}
+{% set sha256 = "f3b7742e2779c1fc88db673a8568a056fb561a18c35b6b805a3c724ecb113fa1" %}
 
 package:
   name: {{ name|lower }}
@@ -25,7 +25,7 @@ requirements:
     - python
     - atom
     - enaml >=0.10.3
-    - h5py
+    - h5py >=2.9.0
     - ipywidgets
     - jupyter
     - lmfit >=0.8.3
@@ -34,11 +34,13 @@ requirements:
     - pandas
     - pillow
     - pyqt >=5.9.2
+    - pystackreg
     - requests
     - scikit-beam >=0.0.17
     - scikit-image
     - scipy
     - six
+    - tifffile
 
 test:
   imports:
@@ -59,6 +61,7 @@ test:
     - pyxrf.model.setting
     - pyxrf.model.utils
     - pyxrf.view
+    - pyxrf.xanes_maps.xanes_maps_api
 
 about:
   home: https://github.com/NSLS-II/pyxrf
