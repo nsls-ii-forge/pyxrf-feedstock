@@ -35,6 +35,7 @@ requirements:
     - pillow
     - pyqt >=5.9.2
     - pystackreg
+    - pyyaml
     - requests
     - scikit-beam >=0.0.17
     - scikit-image
@@ -47,6 +48,8 @@ test:
     - pyxrf
     - pyxrf.api
     - pyxrf.gui
+    - pyxrf.core.fitting
+    - pyxrf.core.yaml_param_files
     - pyxrf.model
     - pyxrf.model.command_tools
     - pyxrf.model.data_to_analysis_store
