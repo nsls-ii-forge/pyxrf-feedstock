@@ -1,6 +1,6 @@
 {% set name = "pyxrf" %}
-{% set version = "0.0.18" %}
-{% set sha256 = "d70838d828ad3036420250e5f0ddc7f4f51908a654af19f08b6b5ca680f516e9" %}
+{% set version = "0.0.19" %}
+{% set sha256 = "d9ca625251ead7352152cc0d7ebee7e8614790be139bc225d29f20095d3f98a0" %}
 
 package:
   name: {{ name|lower }}
@@ -35,6 +35,7 @@ requirements:
     - pillow
     - pyqt >=5.9.2
     - pystackreg
+    - pyyaml
     - requests
     - scikit-beam >=0.0.17
     - scikit-image
@@ -47,6 +48,8 @@ test:
     - pyxrf
     - pyxrf.api
     - pyxrf.gui
+    - pyxrf.core.fitting
+    - pyxrf.core.yaml_param_files
     - pyxrf.model
     - pyxrf.model.command_tools
     - pyxrf.model.data_to_analysis_store
