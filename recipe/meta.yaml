@@ -1,6 +1,6 @@
 {% set name = "pyxrf" %}
-{% set version = "0.0.19" %}
-{% set sha256 = "d9ca625251ead7352152cc0d7ebee7e8614790be139bc225d29f20095d3f98a0" %}
+{% set version = "0.0.20" %}
+{% set sha256 = "75b4579ca6cf51e4ca190f4b8fcc3baf4203f75edce0c780c0e4d918271c60f9" %}
 
 package:
   name: {{ name|lower }}
@@ -27,6 +27,7 @@ requirements:
     - enaml >=0.10.3
     - h5py >=2.9.0
     - ipywidgets
+    - jsonschema
     - jupyter
     - lmfit >=0.8.3
     - matplotlib
@@ -49,6 +50,9 @@ test:
     - pyxrf.api
     - pyxrf.gui
     - pyxrf.core.fitting
+    - pyxrf.core.quant_analysis
+    - pyxrf.core.utils
+    - pyxrf.core.xrf_utils
     - pyxrf.core.yaml_param_files
     - pyxrf.model
     - pyxrf.model.command_tools
@@ -61,8 +65,9 @@ test:
     - pyxrf.model.lineplot
     - pyxrf.model.load_data_from_db
     - pyxrf.model.param_data
+    - pyxrf.model.scan_metadata
     - pyxrf.model.setting
-    - pyxrf.model.utils
+    - pyxrf.simulation.sim_xrf_scan_data
     - pyxrf.view
     - pyxrf.xanes_maps.xanes_maps_api
 
