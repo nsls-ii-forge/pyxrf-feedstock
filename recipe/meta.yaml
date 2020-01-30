@@ -1,6 +1,6 @@
 {% set name = "pyxrf" %}
-{% set version = "0.0.21" %}
-{% set sha256 = "66792f944148c770b59efbc617d1d73c7e6bf5383ccbfde80d4daed080b1a80a" %}
+{% set version = "0.0.22" %}
+{% set sha256 = "f3f35fc5e0b6dd9934b8ee6b0f2246f59b6f032a42c7938009bddf2a74399960" %}
 
 package:
   name: {{ name|lower }}
@@ -38,7 +38,7 @@ requirements:
     - pystackreg
     - pyyaml
     - requests
-    - scikit-beam >=0.0.17
+    - scikit-beam >=0.0.19
     - scikit-image
     - scipy
     - six
