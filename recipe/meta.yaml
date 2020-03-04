@@ -38,7 +38,7 @@ requirements:
     - pystackreg
     - pyyaml
     - requests
-    - scikit-beam >=0.0.19
+    - scikit-beam >=0.0.21
     - scikit-image
     - scipy
     - six
