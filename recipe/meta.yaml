@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - pyxrf = pyxrf.gui:run
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
@@ -23,8 +23,8 @@ requirements:
     - pip
   run:
     - python
-    - atom
-    - enaml >=0.10.3
+    - atom ==0.4.3
+    - enaml ==0.10.4
     - h5py >=2.9.0
     - ipywidgets
     - jsonschema
