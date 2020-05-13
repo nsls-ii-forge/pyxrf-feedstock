@@ -1,6 +1,6 @@
 {% set name = "pyxrf" %}
-{% set version = "0.0.27" %}
-{% set sha256 = "89c4b4a5ca78c384c2829e526af68c372a4a71ffaed629d8014930763af9f3ec" %}
+{% set version = "0.0.28" %}
+{% set sha256 = "15dd81fdc02b3e1399c015d607ce045bd0ab7f932c048090e9e7d441b0c51720" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 0
   entry_points:
     - pyxrf = pyxrf.gui:run
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
@@ -24,6 +24,8 @@ requirements:
   run:
     - python
     - atom ==0.4.3
+    - dask
+    - distributed
     - enaml ==0.10.4
     - h5py >=2.9.0
     - ipywidgets
@@ -31,9 +33,11 @@ requirements:
     - jupyter
     - lmfit >=0.8.3
     - matplotlib
+    - numba
     - numpy
     - pandas
     - pillow
+    - progress
     - pyqt >=5.9.2
     - pystackreg
     - pyyaml
