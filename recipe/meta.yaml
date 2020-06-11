@@ -11,8 +11,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  noarch: python
-  number: 0
+  # noarch: python
+  number: 1
   entry_points:
     - pyxrf = pyxrf.gui:run
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
@@ -27,7 +27,7 @@ requirements:
     - dask
     - distributed
     - enaml ==0.10.4
-    - h5py >=2.9.0
+    - h5py >=2.8.0
     - ipywidgets
     - jsonschema
     - jupyter
