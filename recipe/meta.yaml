@@ -81,3 +81,5 @@ about:
   license_family: BSD
   license_file: LICENSE
   summary: 'Python-based sophisticated fluorescence analysis package for fitting and visualizing X-ray fluorescence data'
+  dev_url: https://github.com/NSLS-II/pyxrf
+  doc_url: http://nsls-ii.github.io/PyXRF
