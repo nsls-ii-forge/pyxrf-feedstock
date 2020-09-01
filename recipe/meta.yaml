@@ -1,6 +1,6 @@
 {% set name = "pyxrf" %}
-{% set version = "0.0.31" %}
-{% set sha256 = "4420b8303c79f8823016fcaa676d123652c43d7369258437dd6e6322f806b2aa" %}
+{% set version = "1.0.0" %}
+{% set sha256 = "a70898faa1dbac3b89c1480ab2128c76d017acd67a8f92333a600907f07df6a7" %}
 
 package:
   name: {{ name|lower }}
@@ -15,7 +15,7 @@ build:
   number: 0
   entry_points:
     - pyxrf = pyxrf.gui:run
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -80,6 +80,6 @@ about:
   license: 3-Clause BSD
   license_family: BSD
   license_file: LICENSE
-  summary: 'Python-based sophisticated fluorescence analysis package for fitting and visualizing X-ray fluorescence data'
+  summary: Python-based sophisticated fluorescence analysis package for fitting and visualizing X-ray fluorescence data
   dev_url: https://github.com/NSLS-II/pyxrf
   doc_url: http://nsls-ii.github.io/PyXRF
