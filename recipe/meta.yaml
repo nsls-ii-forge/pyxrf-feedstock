@@ -12,10 +12,10 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
-    - pyxrf = pyxrf.gui:run
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+    - pyxrf = pyxrf.pyxrf_run:run
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -42,7 +42,7 @@ requirements:
     - pystackreg
     - pyyaml
     - requests
-    - scikit-beam >=0.0.21
+    - scikit-beam >=0.0.23
     - scikit-image
     - scipy
     - six
@@ -77,10 +77,10 @@ test:
     - pyxrf.xanes_maps.xanes_maps_api
 
 about:
-  home: https://github.com/NSLS-II/pyxrf
-  license: 3-Clause BSD
+  home: https://github.com/NSLS-II/PyXRF
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Python-based sophisticated fluorescence analysis package for fitting and visualizing X-ray fluorescence data'
-  dev_url: https://github.com/NSLS-II/pyxrf
+  summary: Python-based sophisticated fluorescence analysis package for fitting and visualizing X-ray fluorescence data
+  dev_url: https://github.com/NSLS-II/PyXRF
   doc_url: http://nsls-ii.github.io/PyXRF
