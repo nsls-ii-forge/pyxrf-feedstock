@@ -51,7 +51,7 @@ requirements:
 test:
   imports:
     - pyxrf
-    - pyxrf.api
+    # - pyxrf.api
     - pyxrf.api_dev
     - pyxrf.gui_module
     - pyxrf.gui_support
