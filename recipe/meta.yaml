@@ -53,13 +53,13 @@ test:
     - pyxrf
     # - pyxrf.api
     - pyxrf.api_dev
-    - pyxrf.gui_module
-    - pyxrf.gui_support
     - pyxrf.core.fitting
     - pyxrf.core.quant_analysis
     - pyxrf.core.utils
     - pyxrf.core.xrf_utils
     - pyxrf.core.yaml_param_files
+    - pyxrf.gui_module
+    - pyxrf.gui_support
     - pyxrf.model
     - pyxrf.model.command_tools
     - pyxrf.model.data_to_analysis_store
@@ -67,12 +67,12 @@ test:
     - pyxrf.model.draw_image_rgb
     - pyxrf.model.fileio
     - pyxrf.model.fit_spectrum
-    - pyxrf.model.parameters
     - pyxrf.model.lineplot
     - pyxrf.model.load_data_from_db
     - pyxrf.model.param_data
+    - pyxrf.model.parameters
+    - pyxrf.model.roi_model
     - pyxrf.model.scan_metadata
-    - pyxrf.model.setting
     - pyxrf.simulation.sim_xrf_scan_data
     - pyxrf.xanes_maps.xanes_maps_api
 
