@@ -1,6 +1,6 @@
 {% set name = "pyxrf" %}
-{% set version = "1.0.1" %}
-{% set sha256 = "3bc145fe5306a22f3aba722736bb31beb41021faecf6a3e37e1c02f5f4809291" %}
+{% set version = "1.0.2" %}
+{% set sha256 = "0e4c000392e70ec04aa38492f8a4868532eae4dfc09e965d1eb5f389f48c94c9" %}
 
 package:
   name: {{ name|lower }}
@@ -31,7 +31,7 @@ requirements:
     - jsonschema
     - jupyter
     - lmfit >=0.8.3
-    - matplotlib
+    - matplotlib <=3.2.2
     - numba
     - numpy
     - pandas
@@ -42,7 +42,7 @@ requirements:
     - pystackreg
     - pyyaml
     - requests
-    - scikit-beam >=0.0.23
+    - scikit-beam >=0.0.24
     - scikit-image
     - scipy
     - six
@@ -51,15 +51,15 @@ requirements:
 test:
   imports:
     - pyxrf
-    - pyxrf.api
+    # - pyxrf.api
     - pyxrf.api_dev
-    - pyxrf.gui_module
-    - pyxrf.gui_support
     - pyxrf.core.fitting
     - pyxrf.core.quant_analysis
     - pyxrf.core.utils
     - pyxrf.core.xrf_utils
     - pyxrf.core.yaml_param_files
+    - pyxrf.gui_module
+    - pyxrf.gui_support
     - pyxrf.model
     - pyxrf.model.command_tools
     - pyxrf.model.data_to_analysis_store
@@ -67,12 +67,12 @@ test:
     - pyxrf.model.draw_image_rgb
     - pyxrf.model.fileio
     - pyxrf.model.fit_spectrum
-    - pyxrf.model.guessparam
     - pyxrf.model.lineplot
     - pyxrf.model.load_data_from_db
     - pyxrf.model.param_data
+    - pyxrf.model.parameters
+    - pyxrf.model.roi_model
     - pyxrf.model.scan_metadata
-    - pyxrf.model.setting
     - pyxrf.simulation.sim_xrf_scan_data
     - pyxrf.xanes_maps.xanes_maps_api
 

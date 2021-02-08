@@ -5,11 +5,13 @@ Home: https://github.com/NSLS-II/PyXRF
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/nsls-ii-forge/pyxrf-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python-based sophisticated fluorescence analysis package for fitting and visualizing X-ray fluorescence data
 
+Development: https://github.com/NSLS-II/PyXRF
 
+Documentation: http://nsls-ii.github.io/PyXRF
 
 Current build status
 ====================
