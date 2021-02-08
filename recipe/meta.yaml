@@ -67,7 +67,7 @@ test:
     - pyxrf.model.draw_image_rgb
     - pyxrf.model.fileio
     - pyxrf.model.fit_spectrum
-    - pyxrf.model.guessparam
+    - pyxrf.model.parameters
     - pyxrf.model.lineplot
     - pyxrf.model.load_data_from_db
     - pyxrf.model.param_data
