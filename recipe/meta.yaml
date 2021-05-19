@@ -27,11 +27,13 @@ requirements:
     - dask
     - distributed
     - h5py >=2.9.0
+    - intel-openmp =2019.4
     - ipywidgets
     - jsonschema
     - jupyter
     - lmfit >=0.8.3
     - matplotlib !=3.3.*
+    - mkl =2019.4
     - numba
     - numpy
     - pandas
