@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - pyxrf = pyxrf.pyxrf_run:run
   script: {{ PYTHON }} -m pip install . --no-deps -vv
@@ -24,8 +24,8 @@ requirements:
   run:
     - python
     - atom
-    - dask
-    - distributed
+    - dask ==2021.4.0
+    - distributed ==2021.4.0
     - h5py >=2.9.0
     - intel-openmp =2019.4
     - ipywidgets
